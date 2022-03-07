@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import breakpoints from "../../styles/breackpoints";
+import breackpoints from "../../styles/breackpoints";
 import colors from "../../styles/colors";
 import { getAdaptiveSize } from "../../styles/helpers"; 
 
@@ -56,7 +56,7 @@ const Company = styled.div`
     } 
 
 
-    @media(max-width: ${breakpoints.xs}) {
+    @media(max-width: ${breackpoints.xs}) {
 
         ${CompanyContentSection} {
             h1 {
@@ -71,7 +71,7 @@ const Company = styled.div`
         }
     }
 
-    @media(max-width: ${breakpoints.xga}) {
+    @media(max-width: ${breackpoints.xga}) {
         flex-direction: column;
 
         ${CompanyContentSection} {
@@ -88,7 +88,7 @@ const Company = styled.div`
         }
     }
 
-    @media(min-width: ${breakpoints.fhd}) {
+    @media(min-width: ${breackpoints.fhd}) {
         
         margin-bottom: 140px;
 

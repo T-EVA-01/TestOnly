@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import colors from "../../styles/colors";
+import breackpoints from '../../styles/breackpoints';
 import { getAdaptiveSize } from "../../styles/helpers";
 
 const Logo = styled.div`
@@ -24,6 +25,23 @@ const Logo = styled.div`
             line-height: 100%;
             color: ${colors.color1};
         }
+    }
+
+    @media(min-width: ${breackpoints.fhd}) {
+        
+        div {
+
+            padding-left: 80px;
+
+            img {
+                width: 39px;
+            }
+            
+            p {
+                font-size:  14px;
+            }
+        }
+        
     }
 
 `

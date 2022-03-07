@@ -19,8 +19,6 @@ export default function Home({ header, company }) {
           />
         </main>
       </Layout>
-
-
   )
 }
 

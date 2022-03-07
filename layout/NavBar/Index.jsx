@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import colors from '../../styles/colors';
-import breakpoints from "../../styles/breackpoints";
+import breackpoints from "../../styles/breackpoints";
 import { getAdaptiveSize } from '../../styles/helpers';
 
 const NavBar = styled.nav`
@@ -36,13 +36,13 @@ const NavBar = styled.nav`
 
     }
 
-    @media (max-width: ${breakpoints.wxgl}) {
+    @media (max-width: ${breackpoints.wxgl}) {
             ul {
                 display: none;
             }
     }
 
-    @media (min-width: ${breakpoints.fhd}) {
+    @media (min-width: ${breackpoints.fhd}) {
     
         ul {
             padding-left: 80px;
