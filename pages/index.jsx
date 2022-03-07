@@ -1,22 +1,39 @@
 import Layout from "../layout/Layout/Index";
 import Header from "../layout/Header/Index";
-import { getHeader } from "../lib/api";
+import Company from "../layout/Company/Index";
+import { getHeader, getCompany } from "../lib/api";
 
-export default function Home({header}) {
+export default function Home({ header, company }) {
   return (
       <Layout>
-        <Header logo={header.logo} links={header.links}/>
+        <Header 
+          logo={header.logo} 
+          links={header.links}
+        />
+        <main>
+          <Company 
+            links={company.links} 
+            title={company.title} 
+            text={company.text} 
+            src={company.src}
+          />
+        </main>
       </Layout>
+
+
   )
 }
 
 export const getStaticProps = async () => {
 
-  const header = getHeader()
+  const company = getCompany();
+  const header = getHeader();
 
+  console.log(company)
   return {
       props: {
-        header
+        header,
+        company
       },
       revalidate: 1
   }

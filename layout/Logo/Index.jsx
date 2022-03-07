@@ -1,18 +1,18 @@
 import styled from "styled-components";
 import colors from "../../styles/colors";
-import breakpoints from "../../styles/breackpoints";
+import { getAdaptiveSize } from "../../styles/helpers";
 
 const Logo = styled.div`
 
     width: calc(880/1920 * 100%);
 
     div {
-        padding-left: calc(30px + (80 - 30) * ((100vw - 320px) / (1920 - 320)));
+        padding-left: ${getAdaptiveSize(30, 80)};
         display: flex;
         align-items: center;
 
         img {
-            width: calc(28px + (39 - 28) * ((100vw - 320px) / (1920 - 320)));
+            width: ${getAdaptiveSize(20, 39)};
         }
 
         p {
@@ -20,7 +20,7 @@ const Logo = styled.div`
             text-transform: uppercase;
             letter-spacing: .1em;
             font-family: Gilroy;
-            font-size:  calc(12px + (14 - 12) * ((100vw - 320px) / (1920 - 320)));
+            font-size:  ${getAdaptiveSize(12, 14)};
             line-height: 100%;
             color: ${colors.color1};
         }

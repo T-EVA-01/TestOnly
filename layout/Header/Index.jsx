@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import colors from '../../styles/colors';
 import Logo from '../Logo/Index';
 import NavBar from '../NavBar/Index';
 
@@ -13,10 +12,10 @@ const Header = styled.header`
     padding: 30px 0 0 0;
 `
 
-const Index = ({logo, links}) => {
+const Index = ({logo, links, className}) => {
 
     return (
-        <Header>
+        <Header className={className}>
             <Logo logo={logo}/>
             <NavBar links={links}/>
         </Header>
