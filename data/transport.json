@@ -1,0 +1,44 @@
+{
+    "title": "Транспорт",
+    "images": [
+        {
+            "src": "images/stock-photo-a-truck-carrying-a-bulky-load-the-big-truck-1291483948.jpg",
+            "id": 1
+        },
+        {
+            "src": "images/detail-of-a-modern-natural-gas-processing-plant-PJU5R2F.jpg",
+            "id": 2
+        }
+    ],
+    "transportTypes": [
+        {
+            "title": "Автотранспорт",
+            "id": 1,
+            "items": [
+                {
+                    "text": "— Собственная автотранспортная компания",
+                    "id": 1
+                },
+                {
+                    "text": "— Перевозка негаборитных и тяжеловесных грузов",
+                    "id": 2
+                },
+                {
+                    "text": "— Доставка в любую точку России",
+                    "id": 3
+                }
+            ]
+        },
+        {
+            "title": "Железнодорожный <br/> транспорт",
+            "id": "2",
+            "items": [
+                {
+                    "text": "На заводе имеется ж/д ветка, заходящая в производственное здание",
+                    "id": 1
+                }
+            ]
+        }
+    ]
+
+}
