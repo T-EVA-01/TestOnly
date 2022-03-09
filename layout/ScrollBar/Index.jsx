@@ -13,6 +13,32 @@ const ScrollBar = styled.div`
     width: 80px;
     z-index: 2;
 
+    .down-button {
+        position: absolute;
+        top: 830px;
+        width: 100%;
+        height: 130px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+
+        .down-button__arrow {
+            transform: rotate(180deg);
+        }
+
+        p {
+            width: 143px;
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: ${colors.color5};
+            transform: rotate(90deg);
+        }
+    }
+
     .icon-wrapper {
         position: absolute;
         bottom: 0;
@@ -35,6 +61,10 @@ const Index = ({ className }) => {
             <MenuBurger
                 isTextVisible={true}
             />
+            <div className="down-button">
+                <p>листать вниз</p>
+                <ArrowIcon className="down-button__arrow"/>
+            </div>
             <div className="icon-wrapper">
                 <ArrowIcon/>
             </div>         
