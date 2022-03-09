@@ -83,6 +83,11 @@ const Transort = styled.section`
         }
     }
 
+    /* убирает блок на ширине ниже 1024  */
+    @media(max-width: ${breackpoints.xga}) {
+        display: none;
+    }
+
 `
 
 const Index = ({ images, title, transportTypes }) => {
