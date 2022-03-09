@@ -4,6 +4,7 @@ import styled from "styled-components";
 const Layout = styled.div`
     max-width: 1920px;
     margin: 0 auto;
+    position: relative;
 `
 
 const Index = ({ children }) => {

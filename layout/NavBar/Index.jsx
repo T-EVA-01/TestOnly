@@ -37,9 +37,7 @@ const NavBar = styled.nav`
     }
 
     @media (max-width: ${breackpoints.wxgl}) {
-            ul {
-                display: none;
-            }
+            display: none;
     }
 
     @media (min-width: ${breackpoints.fhd}) {

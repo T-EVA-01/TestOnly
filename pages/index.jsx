@@ -3,6 +3,7 @@ import Header from "../layout/Header/Index";
 import Company from "../layout/Company/Index";
 import AboutUs from "../layout/AboutUs/Index";
 import Transport from "../layout/Transport/Index";
+import ScrollBar from "../layout/ScrollBar/Index";
 import { getHeader, getCompany, getAboutUs, getTransport } from "../lib/api";
 
 export default function Home({ header, company, aboutUs, transport }) {
@@ -12,6 +13,7 @@ export default function Home({ header, company, aboutUs, transport }) {
           logo={header.logo} 
           links={header.links}
         />
+        <ScrollBar/>
         <main>
           <Company 
             links={company.links} 
