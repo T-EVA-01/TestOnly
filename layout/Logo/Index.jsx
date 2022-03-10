@@ -2,6 +2,7 @@ import styled from "styled-components";
 import colors from "../../styles/colors";
 import breackpoints from '../../styles/breackpoints';
 import { getAdaptiveSize } from "../../styles/helpers";
+import LogoIcon from "../../public/icons/Vector 2.1.svg"
 
 const Logo = styled.div`
 
@@ -12,8 +13,10 @@ const Logo = styled.div`
         display: flex;
         align-items: center;
 
-        img {
-            width: ${getAdaptiveSize(20, 39)};
+        .logo {
+            width: ${getAdaptiveSize(28, 39)}; 
+            min-width: 28px;
+            max-width: 39px;
         }
 
         p {
@@ -51,7 +54,7 @@ const Index = ({ logo, className }) => {
     return (
         <Logo className={className}>
             <div>
-                <img src={logo.icon} alt="logo"/>
+                <LogoIcon className="logo" viewBox="0 0 39 38"/>
                 <p>{logo.title}</p>
             </div>
         </Logo>

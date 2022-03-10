@@ -14,8 +14,8 @@ const NavBar = styled.nav`
         display: flex; 
         justify-content: space-between;
 
-        padding-left: ${getAdaptiveSize(40, 80, 1366)};
-        padding-right: ${getAdaptiveSize(100, 160, 1366)};;
+        padding-left: ${getAdaptiveSize(30, 80)};
+        padding-right: ${getAdaptiveSize(30, 160)};;
 
         a {
             font-family: Gilroy;
