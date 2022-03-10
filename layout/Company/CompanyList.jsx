@@ -8,11 +8,18 @@ const CompanyList = styled.ul`
     margin-bottom: 20px;
     padding-left: ${getAdaptiveSize(30, 80)};
 
-    li:first-child:after {
-        content: ">";
+    li {
+        display: flex;
+        align-items: center ;
+    }
+
+    li .arrow {
         margin: 0 10px;
-        color: ${colors.color4};
-    } 
+    }
+
+    li:last-child .arrow {
+        display: none;
+    }
 
     a {
         font-family: Gilroy;

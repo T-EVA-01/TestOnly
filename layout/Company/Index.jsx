@@ -3,6 +3,8 @@ import breackpoints from "../../styles/breackpoints";
 import colors from "../../styles/colors";
 import { getAdaptiveSize } from "../../styles/helpers"; 
 
+import Arrow2 from "../../public/icons/arrow2.svg";
+
 import CompanyContentSection from "./CompanyContentSection";
 import CompanyList from "./CompanyList";
 
@@ -125,7 +127,9 @@ const Index = ({ links, title, text, src, className }) => {
             <CompanyContentSection>
                 <CompanyList>
                     {links.map(({id, href, text}) => {
-                        return <li key={id}><a href={href}>{text}</a></li>
+                        return (
+                            <li key={id}><a href={href}>{text}</a><Arrow2 className={"arrow"}/></li>
+                        )
                     })}
                 </CompanyList>
                 <h1>{title}</h1>
