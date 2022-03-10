@@ -74,6 +74,14 @@ const Transort = styled.section`
             }
         }
 
+        ${TransportTypeSection}:last-child {
+            h1 {
+                span {
+                    display: block ;
+                }
+            }
+        }
+
     }
 
     @media(min-width: ${breackpoints.fhd}) {
@@ -93,6 +101,7 @@ const Transort = styled.section`
 const Index = ({ images, title, transportTypes }) => {
     const [firstImgState, setFirstImgState] = useState(true);
     const [secondImgState, setSecondImgState] = useState(false);
+    const arrayOfTitleWords = transportTypes[1].title.split(" ");
 
     return(
 
@@ -137,7 +146,7 @@ const Index = ({ images, title, transportTypes }) => {
                     }}
                 >
                     <div className="wrapper">
-                        <h1>{transportTypes[1].title}</h1>
+                        <h1>{arrayOfTitleWords[0]}<span>{arrayOfTitleWords[1]}</span></h1>
                         <ul>
                             {transportTypes[1].items.map(item => {
                                 return <li key={item.id}><p>{item.text}</p></li>
